@@ -6,7 +6,7 @@ services:
         container_name: nginx
         restart: always
         ports:
-            - "8080:8080"
+            - 8080:81
         volumes:
             - ./site.conf:/etc/nginx/conf.d/site.conf
         depends_on:
@@ -17,7 +17,7 @@ services:
     node:
         build:
             context: ./
-            dockerfile: Dockerfile
+            dockerfile: node.dockerfile
         container_name: node
         volumes:
             - ./challenge:/home/fullcycle

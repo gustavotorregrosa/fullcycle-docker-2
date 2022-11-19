@@ -1,0 +1,3 @@
+segue a correcao, professor.
+usando o dockerize p esperar pelo mysql e usando bind de portas - 
+apenas, usei a porta 81 internamente pq a 80 fica ocupada por padrao nessa imagem nginx
